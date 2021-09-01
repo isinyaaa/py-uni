@@ -1,0 +1,15 @@
+\changetocdepth {4}
+\selectlanguage *{portuguese}
+\selectlanguage *[variant=brazilian]{portuguese}
+\selectlanguage *[variant=brazilian,]{portuguese}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {O Programa}}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introdução}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}A transformação de Householder}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Algoritmo de tridiagonalização}{4}{section.1.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {Tarefas}}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Tarefa A}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Tarefa B}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Treliça plana}{6}{section.2.3}%
