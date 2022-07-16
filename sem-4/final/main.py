@@ -19,7 +19,7 @@ def ssa(tfinal):
     x = np.zeros((4,1)) # 4x1
     x[0] = MOLECULES_SUBSTRATE
     x[1] = MOLECULES_ENZYME
-    
+
     t = 0
     while t < tfinal:
         a[0] = c[0] * x[0] * x[1]
@@ -39,11 +39,11 @@ def cle(tfinal, L):
     a = np.zeros(3)
     d = np.zeros(3)
     c = np.array([1e6/(AVOGADRO_CONSTANT * SYSTEM_VOLUME), 1e-4, 0.1]) # 1x3
-    
+
     y = np.zeros((4,1)) # 4x1
     y[0] = MOLECULES_SUBSTRATE
     y[1] = MOLECULES_ENZYME
-    
+
     for k in range(L):
         rand = np.random.random_sample()
         a[0] = c[0] * y[0] * y[1]
