@@ -4,8 +4,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-AVOGADRO_CONSTANT = 6.02214086e23
+# CONSTANTS
+AVOGADRO_CONSTANT   = 6.02214086e23
+SYSTEM_VOLUME       = 1e-15
+MOLECULES_SUBSTRATE = int(5e-7 * AVOGADRO_CONSTANT * SYSTEM_VOLUME)
+MOLECULES_ENZYME    = int(2e-7 * AVOGADRO_CONSTANT * SYSTEM_VOLUME)
 
+STROICHIMETRIC_MATRIX = np.array([[-1, 1, 0], [-1, 1, 1], [1, -1, -1], [0, 0, 1]]) # 4x3
+
+x = np.zeros((4,1)) # 4x1
+x[0] = MOLECULES_SUBSTRATE
+x[1] = MOLECULES_SUBSTRATE
+c = np.array([1e6/(AVOGADRO_CONSTANT * SYSTEM_VOLUME), 1e-4, 0.1]) # 1x3
 
 class ReactionType(Enum):
     SECOND_ORDER = 'SECOND_ORDER'
